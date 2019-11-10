@@ -14,11 +14,11 @@ export class CategoriesServices {
   }
 
   getAllCategories() {
-    return this.MyHttpClient.get('http://localhost:8085/getallcategories', { withCredentials: true })
+    return this.MyHttpClient.get('https://meanstackecommerce.herokuapp.com/getallcategories', { withCredentials: true })
   }
 
   getAllProducts(category_id) {
-    return this.MyHttpClient.post('http://localhost:8085/getallproducts', { category: category_id }, { withCredentials: true })
+    return this.MyHttpClient.post('https://meanstackecommerce.herokuapp.com/getallproducts', { category: category_id }, { withCredentials: true })
   }
 
 

@@ -12,13 +12,13 @@ export class UserService {
   }
 
   userSignUp(data) {
-    return this.MyHttpClient.post('http://localhost:8085/signup', data)
+    return this.MyHttpClient.post('https://meanstackecommerce.herokuapp.com/signup', data)
   }
 
   userSignIn(data) {
-    return this.MyHttpClient.post('http://localhost:8085/signin', data, { withCredentials: true })
+    return this.MyHttpClient.post('https://meanstackecommerce.herokuapp.com/signin', data, { withCredentials: true })
   }
   userSignout() {
-    return this.MyHttpClient.get('http://localhost:8085/signout', { withCredentials: true })
+    return this.MyHttpClient.get('https://meanstackecommerce.herokuapp.com/signout', { withCredentials: true })
   }
 }
