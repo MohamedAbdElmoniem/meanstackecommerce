@@ -1,0 +1,10 @@
+<div *ngFor="let category of categories" style="margin:20px; background-color: tan;">
+  <h2>{{category.category_name}}</h2>
+  <button (click)="navigateToProducts(category)">show products</button>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<button (click)="handleSignout()">sign out</button>

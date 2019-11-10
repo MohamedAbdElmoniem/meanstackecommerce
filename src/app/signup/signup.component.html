@@ -1,0 +1,50 @@
+<mat-grid-list cols="2" rowHeight="8:1">
+  <mat-grid-tile style="border: 1px solid black">
+    <mat-label>username :</mat-label>
+    <br />
+    <mat-form-field>
+      <input matInput placeholder="username" [(ngModel)]="username" />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black">
+    <mat-label>password :</mat-label>
+    <mat-form-field>
+      <input
+        type="password"
+        matInput
+        placeholder="password"
+        [(ngModel)]="password"
+      />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black">
+    <mat-label>address :</mat-label>
+    <mat-form-field>
+      <input type="text" matInput placeholder="address" [(ngModel)]="address" />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black">
+    <mat-label>phone :</mat-label>
+    <mat-form-field>
+      <input type="text" matInput placeholder="phone" [(ngModel)]="phone" />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black">
+    <mat-label>age :</mat-label>
+    <mat-form-field>
+      <input type="text" matInput placeholder="age" [(ngModel)]="age" />
+    </mat-form-field>
+  </mat-grid-tile>
+  <mat-grid-tile style="border: 1px solid black">
+    <mat-label>role :</mat-label>
+    <mat-form-field>
+      <input type="text" matInput placeholder="role" [(ngModel)]="role" />
+    </mat-form-field>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<mat-grid-list cols="1" rowHeight="8:1">
+  <mat-grid-tile>
+    <button (click)="handleSignup()" mat-flat-button color="accent">signup</button>
+  </mat-grid-tile>
+</mat-grid-list>
